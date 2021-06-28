@@ -1,0 +1,221 @@
+body{
+  margin: 0;
+  background-color: #424242;
+  text-align: center;
+  font-family: 'Short Stack', cursive;
+}
+
+footer{
+  margin: 3rem 0 0;
+  color: #FCFCFC;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p{
+  align-self: center;
+}
+
+h1{
+  font-size: 3rem; 
+  background: rgb(134,134,134);
+  background: -webkit-linear-gradient(90deg, rgba(134,134,134,1) 20%, rgba(255,255,255,1) 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+h2, h3{
+  font-size: 2rem;
+  color: #AAFC0F;
+  text-shadow: .06rem .07rem .1rem #DADADA;
+}
+
+#btn{
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #0DFBFF;
+  border-radius: .8rem;
+  color: #505050;
+  transition: background .3s;
+}
+
+#btn:hover{
+  background-color: #10DB76;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 .2rem .2rem rgba(240,240,240,0.82);
+  -moz-box-shadow: 0 0 .2rem .2rem rgba(240,240,240,0.82);
+  box-shadow: 0 0 .2rem .2rem rgba(240,240,240,0.82);
+  color: #FCFCFC;
+}
+
+
+#game{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.player{
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.flag{
+  display: none;
+  font-size: 4rem;
+  position: absolute;
+  top: -2.2rem;
+  left: 5%;
+}
+
+.flag img{
+  width: 20%;
+}
+
+.dice{
+  position: relative;
+  background-color: #E91C1C;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.dice1, .dice2, .dice3, .dice4, .dice5 {
+  display: none;
+}
+
+.dot{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  margin: 1.5rem;
+  box-shadow: inset .1rem .1rem .4rem black;
+}
+
+/* Dado1 */
+.dice1 .dot{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Dado2 */
+.dice2 .dot{
+  position:absolute;
+}
+
+.dice2 .dot:last-child{
+  bottom: 0;
+  right: 0;
+}
+
+/* Dado3 */
+.dice3 .dot{
+  position:absolute;
+}
+
+.dice3 .dot:first-child{
+  bottom: 0;
+  left: 0;
+}
+
+.dice3 .dot:nth-of-type(2){
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dice3 .dot:last-child{
+  top:0;
+  right:0;
+}
+
+/* Dado4 */
+.dice4 .dot{
+  position:absolute;
+}
+
+.dice4 .dot:nth-of-type(2){
+  bottom: 0;
+} 
+
+.dice4 .dot:nth-of-type(3){
+  right: 0;
+} 
+
+.dice4 .dot:last-child{
+  bottom: 0;
+  right: 0;
+} 
+
+/* Dado5 */
+.dice5 .dot{
+  position:absolute;
+}
+
+.dice5 .dot:nth-of-type(2){
+  bottom: 0;
+} 
+
+.dice5 .dot:nth-of-type(3){
+  right: 0;
+} 
+
+.dice5 .dot:nth-of-type(4){
+  bottom: 0;
+  right: 0;
+} 
+
+.dice5 .dot:last-child{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Dado5 */
+.dice6 .dot{
+  position:absolute; 
+}
+
+.dice6 .dot:nth-of-type(2){
+  bottom: 0;
+} 
+
+.dice6 .dot:nth-of-type(3){
+  right: 0;
+} 
+
+.dice6 .dot:nth-of-type(4){
+  bottom: 0;
+  right: 0;
+} 
+
+.dice6 .dot:nth-of-type(5){
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 1.5rem;
+}
+
+.dice6 .dot:last-child{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 1.5rem;
+}
